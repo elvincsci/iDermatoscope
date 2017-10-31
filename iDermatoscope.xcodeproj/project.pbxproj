@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FE8CB2C1BC44C511A7EDD3D /* Pods_iDermatoscope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E03E3DA49F45D7529B10BF4 /* Pods_iDermatoscope.framework */; };
+		3934B111624335A31B539462 /* Pods_iDermatoscopeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE198B408E1CFC324C25F98D /* Pods_iDermatoscopeTests.framework */; };
+		7ECD5A0329EDB55268326B87 /* Pods_iDermatoscopeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074BF3183D53638B35AF7CC2 /* Pods_iDermatoscopeUITests.framework */; };
+		E55760271FA7F57A00185DB0 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55760261FA7F57A00185DB0 /* TabViewController.swift */; };
+		E55760291FA7F5BE00185DB0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55760281FA7F5BE00185DB0 /* SettingViewController.swift */; };
+		E557602B1FA7F5D000185DB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557602A1FA7F5D000185DB0 /* HomeViewController.swift */; };
+		E557602D1FA7F5E000185DB0 /* ExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557602C1FA7F5E000185DB0 /* ExamViewController.swift */; };
+		E55760311FA84A5700185DB0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55760301FA84A5700185DB0 /* RegisterViewController.swift */; };
+		E55760341FA8D1BB00185DB0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55760331FA8D1BB00185DB0 /* User.swift */; };
 		E568DD4E1FA7E50E007E558D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568DD4D1FA7E50E007E558D /* AppDelegate.swift */; };
 		E568DD501FA7E50E007E558D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568DD4F1FA7E50E007E558D /* ViewController.swift */; };
 		E568DD531FA7E50E007E558D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E568DD511FA7E50E007E558D /* Main.storyboard */; };
@@ -14,6 +23,7 @@
 		E568DD581FA7E50F007E558D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E568DD561FA7E50F007E558D /* LaunchScreen.storyboard */; };
 		E568DD631FA7E50F007E558D /* iDermatoscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568DD621FA7E50F007E558D /* iDermatoscopeTests.swift */; };
 		E568DD6E1FA7E50F007E558D /* iDermatoscopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568DD6D1FA7E50F007E558D /* iDermatoscopeUITests.swift */; };
+		E568DD7D1FA7E707007E558D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E568DD7C1FA7E707007E558D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		074BF3183D53638B35AF7CC2 /* Pods_iDermatoscopeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDermatoscopeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB6EF18909850424AED7D33 /* Pods-iDermatoscope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDermatoscope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDermatoscope/Pods-iDermatoscope.debug.xcconfig"; sourceTree = "<group>"; };
+		5FE380F5954A14D8E1FCC7C0 /* Pods-iDermatoscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDermatoscope.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDermatoscope/Pods-iDermatoscope.release.xcconfig"; sourceTree = "<group>"; };
+		7410B17034D99596A64543F6 /* Pods-iDermatoscopeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDermatoscopeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDermatoscopeTests/Pods-iDermatoscopeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E03E3DA49F45D7529B10BF4 /* Pods_iDermatoscope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDermatoscope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E04379EF1328BCAF88069A4 /* Pods-iDermatoscopeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDermatoscopeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDermatoscopeUITests/Pods-iDermatoscopeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A6C109329965D3B7FA56A7E7 /* Pods-iDermatoscopeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDermatoscopeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDermatoscopeTests/Pods-iDermatoscopeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE198B408E1CFC324C25F98D /* Pods_iDermatoscopeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDermatoscopeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55760261FA7F57A00185DB0 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		E55760281FA7F5BE00185DB0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E557602A1FA7F5D000185DB0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E557602C1FA7F5E000185DB0 /* ExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamViewController.swift; sourceTree = "<group>"; };
+		E55760301FA84A5700185DB0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E55760331FA8D1BB00185DB0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E568DD4A1FA7E50E007E558D /* iDermatoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDermatoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E568DD4D1FA7E50E007E558D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E568DD4F1FA7E50E007E558D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +71,8 @@
 		E568DD691FA7E50F007E558D /* iDermatoscopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDermatoscopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E568DD6D1FA7E50F007E558D /* iDermatoscopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDermatoscopeUITests.swift; sourceTree = "<group>"; };
 		E568DD6F1FA7E50F007E558D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E568DD7C1FA7E707007E558D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE75D2C145C36F8871BE09C3 /* Pods-iDermatoscopeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDermatoscopeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDermatoscopeUITests/Pods-iDermatoscopeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE8CB2C1BC44C511A7EDD3D /* Pods_iDermatoscope.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3934B111624335A31B539462 /* Pods_iDermatoscopeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +96,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ECD5A0329EDB55268326B87 /* Pods_iDermatoscopeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50557D4DA669B31C31DA0B80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E03E3DA49F45D7529B10BF4 /* Pods_iDermatoscope.framework */,
+				DE198B408E1CFC324C25F98D /* Pods_iDermatoscopeTests.framework */,
+				074BF3183D53638B35AF7CC2 /* Pods_iDermatoscopeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF773127DE18CFD532C561B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DB6EF18909850424AED7D33 /* Pods-iDermatoscope.debug.xcconfig */,
+				5FE380F5954A14D8E1FCC7C0 /* Pods-iDermatoscope.release.xcconfig */,
+				A6C109329965D3B7FA56A7E7 /* Pods-iDermatoscopeTests.debug.xcconfig */,
+				7410B17034D99596A64543F6 /* Pods-iDermatoscopeTests.release.xcconfig */,
+				FE75D2C145C36F8871BE09C3 /* Pods-iDermatoscopeUITests.debug.xcconfig */,
+				9E04379EF1328BCAF88069A4 /* Pods-iDermatoscopeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E55760251FA7E83500185DB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E557602A1FA7F5D000185DB0 /* HomeViewController.swift */,
+				E55760301FA84A5700185DB0 /* RegisterViewController.swift */,
+				E557602C1FA7F5E000185DB0 /* ExamViewController.swift */,
+				E55760281FA7F5BE00185DB0 /* SettingViewController.swift */,
+				E55760261FA7F57A00185DB0 /* TabViewController.swift */,
+				E568DD4F1FA7E50E007E558D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E55760321FA8D19900185DB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E55760331FA8D1BB00185DB0 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E568DD411FA7E50E007E558D = {
 			isa = PBXGroup;
 			children = (
+				E55760321FA8D19900185DB0 /* Model */,
+				E55760251FA7E83500185DB0 /* Controller */,
+				E568DD7B1FA7E6F6007E558D /* Google */,
 				E568DD4C1FA7E50E007E558D /* iDermatoscope */,
 				E568DD611FA7E50F007E558D /* iDermatoscopeTests */,
 				E568DD6C1FA7E50F007E558D /* iDermatoscopeUITests */,
 				E568DD4B1FA7E50E007E558D /* Products */,
+				DF773127DE18CFD532C561B4 /* Pods */,
+				50557D4DA669B31C31DA0B80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				E568DD4D1FA7E50E007E558D /* AppDelegate.swift */,
-				E568DD4F1FA7E50E007E558D /* ViewController.swift */,
 				E568DD511FA7E50E007E558D /* Main.storyboard */,
 				E568DD541FA7E50F007E558D /* Assets.xcassets */,
 				E568DD561FA7E50F007E558D /* LaunchScreen.storyboard */,
@@ -125,6 +202,14 @@
 			path = iDermatoscopeUITests;
 			sourceTree = "<group>";
 		};
+		E568DD7B1FA7E6F6007E558D /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				E568DD7C1FA7E707007E558D /* GoogleService-Info.plist */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E568DD721FA7E50F007E558D /* Build configuration list for PBXNativeTarget "iDermatoscope" */;
 			buildPhases = (
+				2BD4967313BF6CA2ED0BA7C8 /* [CP] Check Pods Manifest.lock */,
 				E568DD461FA7E50E007E558D /* Sources */,
 				E568DD471FA7E50E007E558D /* Frameworks */,
 				E568DD481FA7E50E007E558D /* Resources */,
+				24463D511030CDDE3B0D70E4 /* [CP] Embed Pods Frameworks */,
+				898B05D3FE2A50B7A498802A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E568DD751FA7E50F007E558D /* Build configuration list for PBXNativeTarget "iDermatoscopeTests" */;
 			buildPhases = (
+				F476D072781EBF3361F32F39 /* [CP] Check Pods Manifest.lock */,
 				E568DD5A1FA7E50F007E558D /* Sources */,
 				E568DD5B1FA7E50F007E558D /* Frameworks */,
 				E568DD5C1FA7E50F007E558D /* Resources */,
+				47CF775A1962614AC86788EF /* [CP] Embed Pods Frameworks */,
+				E05E00678A54551358166DAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E568DD781FA7E50F007E558D /* Build configuration list for PBXNativeTarget "iDermatoscopeUITests" */;
 			buildPhases = (
+				8257324B3B097EBFEEC0B399 /* [CP] Check Pods Manifest.lock */,
 				E568DD651FA7E50F007E558D /* Sources */,
 				E568DD661FA7E50F007E558D /* Frameworks */,
 				E568DD671FA7E50F007E558D /* Resources */,
+				549A660D5DDB435685EF3173 /* [CP] Embed Pods Frameworks */,
+				9CC059D20D34105CAB2A5BA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E568DD581FA7E50F007E558D /* LaunchScreen.storyboard in Resources */,
+				E568DD7D1FA7E707007E558D /* GoogleService-Info.plist in Resources */,
 				E568DD551FA7E50F007E558D /* Assets.xcassets in Resources */,
 				E568DD531FA7E50E007E558D /* Main.storyboard in Resources */,
 			);
@@ -254,13 +349,178 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24463D511030CDDE3B0D70E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iDermatoscope/Pods-iDermatoscope-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDermatoscope/Pods-iDermatoscope-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BD4967313BF6CA2ED0BA7C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDermatoscope-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47CF775A1962614AC86788EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDermatoscopeTests/Pods-iDermatoscopeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		549A660D5DDB435685EF3173 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDermatoscopeUITests/Pods-iDermatoscopeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8257324B3B097EBFEEC0B399 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDermatoscopeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		898B05D3FE2A50B7A498802A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iDermatoscope/Pods-iDermatoscope-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDermatoscope/Pods-iDermatoscope-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC059D20D34105CAB2A5BA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDermatoscopeUITests/Pods-iDermatoscopeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E05E00678A54551358166DAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDermatoscopeTests/Pods-iDermatoscopeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F476D072781EBF3361F32F39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDermatoscopeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E568DD461FA7E50E007E558D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E557602B1FA7F5D000185DB0 /* HomeViewController.swift in Sources */,
+				E55760271FA7F57A00185DB0 /* TabViewController.swift in Sources */,
+				E55760311FA84A5700185DB0 /* RegisterViewController.swift in Sources */,
 				E568DD501FA7E50E007E558D /* ViewController.swift in Sources */,
+				E55760341FA8D1BB00185DB0 /* User.swift in Sources */,
 				E568DD4E1FA7E50E007E558D /* AppDelegate.swift in Sources */,
+				E55760291FA7F5BE00185DB0 /* SettingViewController.swift in Sources */,
+				E557602D1FA7F5E000185DB0 /* ExamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +684,7 @@
 		};
 		E568DD731FA7E50F007E558D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB6EF18909850424AED7D33 /* Pods-iDermatoscope.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +700,7 @@
 		};
 		E568DD741FA7E50F007E558D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE380F5954A14D8E1FCC7C0 /* Pods-iDermatoscope.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +716,7 @@
 		};
 		E568DD761FA7E50F007E558D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C109329965D3B7FA56A7E7 /* Pods-iDermatoscopeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +734,7 @@
 		};
 		E568DD771FA7E50F007E558D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7410B17034D99596A64543F6 /* Pods-iDermatoscopeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +752,7 @@
 		};
 		E568DD791FA7E50F007E558D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE75D2C145C36F8871BE09C3 /* Pods-iDermatoscopeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +769,7 @@
 		};
 		E568DD7A1FA7E50F007E558D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E04379EF1328BCAF88069A4 /* Pods-iDermatoscopeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

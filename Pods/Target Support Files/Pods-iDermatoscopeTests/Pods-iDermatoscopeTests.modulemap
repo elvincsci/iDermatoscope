@@ -1,0 +1,6 @@
+framework module Pods_iDermatoscopeTests {
+  umbrella header "Pods-iDermatoscopeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
