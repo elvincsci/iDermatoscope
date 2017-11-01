@@ -9,6 +9,7 @@ target 'iDermatoscope' do
 
 	pod 'Firebase/Auth'
 	pod ‘GoogleSignIn’
+	pod 'ALCameraViewController'
 
 
 

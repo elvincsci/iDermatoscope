@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ALCameraViewController
+
 
 class ExamViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
@@ -16,7 +18,7 @@ class ExamViewController: UICollectionViewController, UICollectionViewDelegateFl
         navigationItem.title = "Exam"
         
         
-        let button = UIButton(frame: CGRect(x: view.frame.width / 2, y: view.frame.height / 2, width: 40, height: 40))
+        let button = UIButton(frame: CGRect(x: view.frame.width / 2, y: view.frame.height / 2, width: 80, height: 40))
         button.backgroundColor = .red
         button.tintColor = .white
         button.setTitle("Camera", for: .normal)
@@ -30,8 +32,13 @@ class ExamViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     @objc func  change() {
-        let loginController = ViewController()
-        present(loginController, animated: true, completion: nil)
+        
+        let cameraViewController = CameraViewController { [weak self] image, asset in
+            // Do something with your image here.
+            self?.dismiss(animated: true, completion: nil)
+        }
+        
+        present(cameraViewController, animated: true, completion: nil)
         
     }
 
