@@ -10,7 +10,6 @@
 		0FE8CB2C1BC44C511A7EDD3D /* Pods_iDermatoscope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E03E3DA49F45D7529B10BF4 /* Pods_iDermatoscope.framework */; };
 		3934B111624335A31B539462 /* Pods_iDermatoscopeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE198B408E1CFC324C25F98D /* Pods_iDermatoscopeTests.framework */; };
 		7ECD5A0329EDB55268326B87 /* Pods_iDermatoscopeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074BF3183D53638B35AF7CC2 /* Pods_iDermatoscopeUITests.framework */; };
-		E555F3101FAA1F1A00E99D06 /* cameraView.strings in Resources */ = {isa = PBXBuildFile; fileRef = E555F30F1FAA1F1A00E99D06 /* cameraView.strings */; };
 		E55760271FA7F57A00185DB0 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55760261FA7F57A00185DB0 /* TabViewController.swift */; };
 		E55760291FA7F5BE00185DB0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55760281FA7F5BE00185DB0 /* SettingViewController.swift */; };
 		E557602B1FA7F5D000185DB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557602A1FA7F5D000185DB0 /* HomeViewController.swift */; };
@@ -24,7 +23,7 @@
 		E568DD581FA7E50F007E558D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E568DD561FA7E50F007E558D /* LaunchScreen.storyboard */; };
 		E568DD631FA7E50F007E558D /* iDermatoscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568DD621FA7E50F007E558D /* iDermatoscopeTests.swift */; };
 		E568DD6E1FA7E50F007E558D /* iDermatoscopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568DD6D1FA7E50F007E558D /* iDermatoscopeUITests.swift */; };
-		E568DD7D1FA7E707007E558D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E568DD7C1FA7E707007E558D /* GoogleService-Info.plist */; };
+		E5DEAA681FAA91D7007D684E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5DEAA671FAA91D7007D684E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +52,6 @@
 		9E04379EF1328BCAF88069A4 /* Pods-iDermatoscopeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDermatoscopeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDermatoscopeUITests/Pods-iDermatoscopeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A6C109329965D3B7FA56A7E7 /* Pods-iDermatoscopeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDermatoscopeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDermatoscopeTests/Pods-iDermatoscopeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE198B408E1CFC324C25F98D /* Pods_iDermatoscopeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDermatoscopeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E555F30F1FAA1F1A00E99D06 /* cameraView.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = cameraView.strings; sourceTree = "<group>"; };
 		E55760261FA7F57A00185DB0 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		E55760281FA7F5BE00185DB0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E557602A1FA7F5D000185DB0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +71,7 @@
 		E568DD691FA7E50F007E558D /* iDermatoscopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDermatoscopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E568DD6D1FA7E50F007E558D /* iDermatoscopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDermatoscopeUITests.swift; sourceTree = "<group>"; };
 		E568DD6F1FA7E50F007E558D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E568DD7C1FA7E707007E558D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5DEAA671FAA91D7007D684E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE75D2C145C36F8871BE09C3 /* Pods-iDermatoscopeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDermatoscopeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDermatoscopeUITests/Pods-iDermatoscopeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,7 +150,6 @@
 		E568DD411FA7E50E007E558D = {
 			isa = PBXGroup;
 			children = (
-				E555F30F1FAA1F1A00E99D06 /* cameraView.strings */,
 				E55760321FA8D19900185DB0 /* Model */,
 				E55760251FA7E83500185DB0 /* Controller */,
 				E568DD7B1FA7E6F6007E558D /* Google */,
@@ -208,7 +205,7 @@
 		E568DD7B1FA7E6F6007E558D /* Google */ = {
 			isa = PBXGroup;
 			children = (
-				E568DD7C1FA7E707007E558D /* GoogleService-Info.plist */,
+				E5DEAA671FAA91D7007D684E /* GoogleService-Info.plist */,
 			);
 			path = Google;
 			sourceTree = "<group>";
@@ -330,9 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E568DD581FA7E50F007E558D /* LaunchScreen.storyboard in Resources */,
-				E568DD7D1FA7E707007E558D /* GoogleService-Info.plist in Resources */,
+				E5DEAA681FAA91D7007D684E /* GoogleService-Info.plist in Resources */,
 				E568DD551FA7E50F007E558D /* Assets.xcassets in Resources */,
-				E555F3101FAA1F1A00E99D06 /* cameraView.strings in Resources */,
 				E568DD531FA7E50E007E558D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +361,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -373,6 +370,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

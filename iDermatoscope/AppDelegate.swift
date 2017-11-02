@@ -47,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
         func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
             // ...
+            
             if let err = error {
                 print("Failed to log into Google:", err)
                 return
@@ -64,9 +65,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                     print("Failed to log in with Firebase:", err)
                     return
                 }
+                
                 print("Successfully logged in with Firebase:")
+
                 
             }
+            
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.makeKeyAndVisible()
+            self.window?.rootViewController = TabViewController()
             
            // self.window = UIWindow(frame: UIScreen.main.bounds)
             //self.window?.makeKeyAndVisible()
@@ -74,10 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             //self.window?.rootViewController = TabViewController()
             
             
-            window = UIWindow(frame: UIScreen.main.bounds)
-            window?.makeKeyAndVisible()
-            
-             window?.rootViewController = TabViewController()
+
             
            // window?.rootViewController = UINavigationController(rootViewController: TabViewController())
             

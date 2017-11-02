@@ -13,15 +13,19 @@ import GoogleSignIn
 class ViewController: UIViewController, GIDSignInUIDelegate {
 
     @IBOutlet weak var signInButton: GIDSignInButton!
+    @IBOutlet var inputFields: [UITextField]!
+    @IBOutlet var waringLabels: [UILabel]!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.gray
+        view.backgroundColor = UIColor.lightGray
         
         //Google sign in button
         setupGoogle()
 
+    
         
         view.addSubview(inputsContainerView)
         view.addSubview(loginButton)
@@ -38,6 +42,13 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     }
     
     
+    func pushTomainView() {
+        let loginController = TabViewController()
+        present(loginController, animated: true, completion: nil)
+    
+    }
+    
+    
     // View and buttons
     
     lazy var registerButton: UIButton = {
@@ -46,10 +57,10 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
 
        let yourAttributes : [NSAttributedStringKey: Any] = [
             NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18),
-           NSAttributedStringKey.foregroundColor : UIColor.black,
+           NSAttributedStringKey.foregroundColor : UIColor.green,
            NSAttributedStringKey.underlineStyle : NSUnderlineStyle.styleSingle.rawValue]
     
-        let attributeString = NSMutableAttributedString(string: "Register",
+        let attributeString = NSMutableAttributedString(string: "Create account",
                                                         attributes: yourAttributes)
         
         button.setAttributedTitle(attributeString, for: .normal)
@@ -66,7 +77,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     //Login button
     lazy var loginButton: UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = UIColor.white
+        button.backgroundColor = UIColor.green
         button.setTitle("Login", for: UIControlState())
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(UIColor.black, for: UIControlState())
@@ -84,7 +95,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         //button.backgroundColor = UIColor.white
         button.setTitle("Forgot Password ?", for: UIControlState())
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitleColor(UIColor.black, for: UIControlState())
+        button.setTitleColor(UIColor.green, for: UIControlState())
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         
         button.addTarget(self, action: #selector(handleForgotPasssword), for: .touchUpInside)
@@ -92,21 +103,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         return button
     }()
 
-    //
-//    lazy var forgotButton: UIButton = {
-//        let button = UIButton(type: .system)
-//        button.backgroundColor = UIColor.white
-//        button.setTitle("Forgot Password?", for: UIControlState())
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        button.setTitleColor(UIColor.black, for: UIControlState())
-//        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-//
-//        button.addTarget(self, action: #selector(handleforgot), for: .touchUpInside)
-//
-//        return button
-//    }()
-    
-    
+        
     let emailTextField: UITextField = {
         let tf = UITextField()
         tf.placeholder = "Email"
@@ -117,7 +114,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     
     let emailSeparatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.lightGray
+        view.backgroundColor = UIColor.gray
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -224,24 +221,109 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
  
     }
     
+     func showAlertWithTitle(_ conroller: UIViewController, title: String, message: String = "" ,dismissButtonTitle: String, dismissAction:@escaping ()->Void) {
+        
+        let validationLinkAlert = UIAlertController(title:title, message:message, preferredStyle: .alert)
+        let dismissAction = UIAlertAction(title: dismissButtonTitle, style: .default) { (action) -> Void in
+            dismissAction()
+        }
+        
+        validationLinkAlert.addAction(dismissAction)
+        conroller.present(validationLinkAlert, animated: true, completion: nil)
+    }
     
     //Handle event controller
     @objc fileprivate func handleLogin(){
         
         print("Login Manually")
         
+        
+        
+                            // This here works btw
+//        guard let email = emailTextField.text, let password = passwordTextField.text else {
+//            print("Form is not valid")
+//            return
+//        }
+//
+//        Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
+//
+//            if error != nil {
+//                print(error ?? "")
+//                return
+//            }
+//
+//            //successfully logged in our user
+//
+//            let loginController = TabViewController()
+//            self.present(loginController, animated: true, completion: nil)
+//
+//        })
+        
+        
+        
+        
+        
+//        for item in self.inputFields {
+//            item.resignFirstResponder()
+//        }
+//
+        
+        
+        User.loginUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { [weak weakSelf = self](status) in
+            DispatchQueue.main.async {
+
+//                for item in self.inputFields {
+//                    item.text = ""
+//                }
+                if ((self.emailTextField.text?.isEmpty)! || (self.passwordTextField.text?.isEmpty)! )
+                {
+                    self.showAlertWithTitle(self, title: "Email and/or Password field is empty", dismissButtonTitle: "OK") { () -> Void in
+                        
+                    }
+                    
+                }
+                
+//
+                if status == true {
+                    weakSelf?.pushTomainView()
+                } else {
+                    
+                    self.showAlertWithTitle(self, title: "Incorrect Email and/or Password", dismissButtonTitle: "OK") { () -> Void in
+                        
+                    }
+                    
+                    self.emailTextField.text = ""
+                    self.passwordTextField.text = ""
+//                    for item in (weakSelf?.waringLabels)! {
+//                        item.isHidden = false
+//                    }
+                    
+                }
+                weakSelf = nil
+
+
+            }
+        }
+
+
+        
     }
     
     @objc fileprivate func handleregister() {
         
         print("Register")
-        
     
+    
+//        let loginController = RegisterViewController()
+//        loginController.navigationItem.title = "Create new account"
+//        navigationItem.title = "Pizza to One"
+//        present(loginController, animated: true, completion: nil)
+//
         
-        let loginController = RegisterViewController()
-        present(loginController, animated: true, completion: nil)
+        let editorViewController = RegisterViewController()
         
-
+        
+        self.present(editorViewController, animated: true, completion: nil)
 
     }
     
